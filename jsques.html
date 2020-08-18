@@ -1,0 +1,195 @@
+<html>
+  <body>
+    <script>
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      /////////////////////////////////////////////////////////////////very easy:-/////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      /*1)*/
+      /*
+ function convert_min_to_sec(){
+ var minutes = prompt("Please enter minutes to convert in seconds", 0);
+  if (minutes != null) {
+    return "after conversion into seconds :- " + minutes*60;
+  }}
+  console.log(convert_min_to_sec());
+  */
+
+      /*2)*/
+      /*function calculate(){
+  var a = prompt("enter the value of a ", 0);
+   var b = prompt("enter the value of b ", 0);
+  if (a>=b && a%b === 0) return true;
+  else return false;}
+  console.log(calculate());*/
+
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      /////////////////////////////////////////////////////////////////easy:-/////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      /*1)*/
+      /*function charCount(letter, str) 
+{
+ var Count = 0;
+ for (var pos = 0; pos < str.length; pos++) 
+ {
+    if (str.charAt(pos) == letter) 
+      {
+      Count += 1;
+      }
+  }
+  return Count;
+}
+var character = prompt("enter a single character ", 'a');
+var stringvalue = prompt("enter the string ", 'niharika');
+console.log(charCount(character, stringvalue));*/
+
+      /*2)*/
+      /*function addUp(addup_value){
+if(addup_value>=1 && addup_value<=1000){
+ var Count = 0;
+ for (var val = 1; val <= addup_value; val++) 
+ {
+    
+      Count += val;
+      
+  }
+  return Count;
+}
+else{
+alert("enter a numer between 1 to 1000")}
+}
+var user_addUp_value = prompt("enter a number to generate add up value")
+console.log("the addUp value "+addUp(user_addUp_value));*/
+
+      /*3)*/
+      /*function charReplace(str) 
+{
+var s = str.split('');
+ for (var i = 0; i < str.length; i++) 
+ {
+   switch(s[i]) {
+		case ' ':
+		break;
+		case 'a':
+		s[i] = '1';
+		break;
+		case 'e': 
+		s[i] = '2';
+		break;
+		case 'i':
+		s[i] = '3';
+		break;
+		case 'o': 
+		s[i] = '4';
+		break;
+		case 'u':
+		s[i] = '5';
+		break;
+		default:
+		s[i] = s[i];
+}
+  }
+ return s.join('');
+}
+var stringvalue = prompt("enter the string ", 'niharika');
+console.log(charReplace(stringvalue.toLowerCase()));*/
+
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      /////////////////////////////////////////////////////////////////medium:-///////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      /*1)*/
+      /*function Reverse(str,res) 
+{
+var s = str.split(' ');
+ for (var i = 0; i < s.length; i++) 
+ {
+ if(s[i].includes(res))
+  s[i]= s[i].split('').reverse().join('') ;
+  else
+  s[i] = s[i];
+} 
+return s.join(' ');
+}
+var string_reverse = prompt("enter the sentence ", "how are you");
+var reverse_char = prompt("enter the character ", "r");
+console.log(Reverse(string_reverse.toLowerCase(), reverse_char.toLowerCase()));*/
+
+      /*2)*/
+      /*const testJackpot = arr =>
+arr.every(arr_value => arr_value === arr[0]);
+console.log(testJackpot (["@", "@", "@", "@"]));
+console.log(testJackpot (["&&", "&", "&&&", "&&&&"]));
+console.log(testJackpot (["SS", "SS", "SS", "Ss"]));
+*/
+
+      /*3)*/
+      /*function removeDups(array){
+        var uniqueArray = [];
+        for(i=0; i < array.length; i++){
+            if(uniqueArray.indexOf(array[i]) === -1) {
+                uniqueArray.push(array[i]);
+            }
+        }
+        return uniqueArray;
+    }
+    
+    console.log(removeDups([1, 0, 1, 0]));
+	console.log(removeDups (["The", "big", "cat"]));
+	console.log(removeDups (["John", "Taylor", "John"]));
+	console.log(removeDups (["John", "john"]));
+	*/
+
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////hard:-///////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      /*1)*/
+      /*function realType(type_search){
+var type_value = typeof(type_search);
+var result;
+switch(type_value) {
+		case 'number':
+		result = "number";
+		break;
+		case 'string':
+		result = "string";
+		break;
+		case 'boolean': 
+		result = "boolean"
+		break;
+		case 'object':
+		if(type_search === null){result = "null"}
+		else{result = "array"}
+		break;
+		default:
+		result = "invalid";
+}
+return result;
+}
+console.log("1 :- "+realType(1));
+console.log("a :- "+realType("a"));
+console.log("true :- "+realType(true));
+console.log("[] :- "+realType([]));
+console.log("null :- "+realType(null));*/
+
+      /*2)*/
+      /*function numInStr(array){
+        var uniqueArray = [];
+        for(i=0; i < array.length; i++){
+            if(array[i].includes(0) || array[i].includes(1) || array[i].includes(2) || array[i].includes(3) || array[i].includes(4) || array[i].includes(5) || array[i].includes(6) || array[i].includes(7) || array[i].includes(8) || array[i].includes(9)) {
+                uniqueArray.push(array[i]);
+            }
+			else{continue;}
+        }
+        return uniqueArray;
+    }
+    
+    console.log(numInStr(["1a", "a", "2b", "b"]));
+	console.log(numInStr(["abc", "abc10"]));
+	console.log(numInStr(["abc", "ab10c", "a10bc", "bcd"]));
+	console.log(numInStr(["this is a test", "test1"]));*/
+    </script>
+  </body>
+</html>
